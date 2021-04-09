@@ -3,13 +3,13 @@
 one:
   recipient: one
   recipient_type: Recipient
-  type: 
-  params: 
-  read_at: 2021-04-08 23:04:58
+  type: 'error'
+  params:
+  read_at: Time.current
 
 two:
   recipient: two
   recipient_type: Recipient
-  type: 
-  params: 
-  read_at: 2021-04-08 23:04:58
+  type: 'error'
+  params:
+  read_at: Time.current
