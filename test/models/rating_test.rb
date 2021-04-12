@@ -81,4 +81,10 @@ class RatingTest < ActiveSupport::TestCase
     rating.detractor?
     assert_not rating.detractor?
   end
+
+  test "uptade person score cache when created" do
+    person = people(:one)
+    person.ratings.create(score: 9)
+    assert_equal 9, person.score
+  end
 end
